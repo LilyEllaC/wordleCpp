@@ -15,12 +15,11 @@ To play the game, you need to download and run the pre-compiled executable for y
 
 ### Prerequisites
 
-*   A compatible operating system (Linux).
-*   A terminal or command prompt application with support for ANSI color codes for optimal viewing (most modern terminals support this).
+*You need to have a compatable operating system in this case Linux
 
 ### How to Run the Game
 
-1.  **Download:** Get the latest executable from the [Releases page](https://github.com/Aaron-c/lilyPython) or download it directly from the [itch.io page](ADD_YOUR_ITCH_IO_URL_HERE).
+1.  **Download:** Get the latest executable from the [Releases page](https://github.com/Aaron-c/lilyPython) or download it directly from the [itch.io page](https://lilyec.itch.io/multi-wordle).
 2.  **Navigate:** Open your terminal or command prompt and go to the directory where you downloaded the executable.
 3.  **Execute:** Run the game using the appropriate command for your system:
     *   **Linux:**
@@ -34,12 +33,24 @@ To play the game, you need to download and run the pre-compiled executable for y
     ```
 
 ## 🎮 How to Play
+The point of the game is to guess all the words while using the same guess word for all boards. *More specific instructions available in the game*
 
-The objective is to solve all active Wordle boards simultaneously.
+*   **Playing** Enter any valid 5 letter words that will then individually apply to all active games
+*   **Output** Will output coloured letters
+        **Green** Letter is in the right place
+        **Yellow** Letter is in the word, but in a different place
+        **Gray** Letter is not in the word
+*   **Ending** The game ends when the user has successfully guessed all of the words or has run out of guesses
+example start with 4 wordles
+![image info](./image.png)
 
-*   **Input:** Type a 5-letter word and press `Enter`. This single guess is applied to *all* active boards at the same time.
-*   **Feedback:** Each board updates independently with standard Wordle feedback:
-    *   **Green:** Correct letter in the correct spot.
-    *   **Yellow:** Correct letter in the wrong spot.
-    *   **Grey:** Letter is not in the word.
-*   **Winning:** Continue guessing until all boards successfully reveal their hidden words within the maximum number of attempts.
+## 🛠️ Building from Source (For Developers)
+
+If you wish to compile the game yourself, you will need a C++ compiler (like g++ or Clang) and Make.
+
+1.  **Clone the Repository:**
+
+2.  **Build and launch the Game:**
+    ```bash
+    source launch
+    ```
